@@ -1,0 +1,100 @@
+body{
+    background-color:  hsl(30, 38%, 92%);
+     
+}
+p{
+    font-size: 14px;
+}
+.container{
+    height: 100vh;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .main{
+    display: grid;
+    grid-template-columns: 270px 270px;
+    
+}
+.container .main .image img{
+    width: 270px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container .main .product-info{
+    background-color:  hsl(0, 0%, 100%);
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.container .main .product-info .product-name{
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 4.5px;
+   color: hsl(228, 12%, 48%);
+}
+.container .main .product-info .perfume-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.container .main .product-info .product-description{
+    color: hsl(228, 12%, 48%);
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+     font-weight:500;
+     line-height:1.2rem;
+     margin-bottom: 0;
+}
+.container .main .product-info .offer-price{
+    font-family: 'Fraunces', serif;
+    color:  hsl(158, 36%, 37%);
+    display: inline-block;
+    vertical-align: middle;
+}
+.container .main .product-info .mrp-price{
+color: hsl(228, 12%, 48%);
+font-family: 'Fraunces', serif;
+text-decoration: line-through;
+display: inline-block;
+margin-left: 20px;
+vertical-align: middle;
+}
+.container .main .product-info .addtocart{
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: .5rem;
+    border: none;
+    color: hsl(0, 0%, 100%);
+     font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.cart-icon {
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 600px) {
+  .container .main {
+    grid-template-columns:1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .container .main .image img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding-top: 25px;
+  }
+
+  .container .main .product-info {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 25px;
+  }
+}
